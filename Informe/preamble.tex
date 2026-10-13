@@ -1,0 +1,161 @@
+% Fonts, layout, links
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\onehalfspacing
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[hidelinks]{hyperref}
+% \hypersetup{
+%   pdftitle={\ThesisTitle},
+%   pdfauthor={\AuthorName}
+% }
+
+% Figures, tables, math
+\usepackage{graphicx}
+\graphicspath{{Fig/}}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{tabularx}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{siunitx}
+\usepackage{float}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{svg}
+
+% listing formatting
+\lstset{
+    basicstyle=\ttfamily\small,
+    frame=single,
+    numbers=left,
+    numberstyle=\tiny\color{gray},
+    numbersep=10pt,
+    breaklines=true,
+    breakatwhitespace=false,
+    showstringspaces=false,
+    tabsize=4,
+    columns=fullflexible,
+    keepspaces=true,
+    xleftmargin=2em,
+    framexleftmargin=2em
+}
+
+% Colores
+\definecolor{fondo}{RGB}{248,248,248}
+\definecolor{marco}{RGB}{210,210,210}
+\definecolor{palabrasclave}{RGB}{120,60,150}
+\definecolor{tipos}{RGB}{30,120,90}
+\definecolor{numeros}{RGB}{140,140,140}
+\definecolor{funciones}{RGB}{180,100,30}
+\definecolor{comentarios}{RGB}{100,100,100}
+
+% Lenguaje para el modelo relacional
+\lstdefinelanguage{relacional}{
+    morekeywords={PRIMARY,KEY,FOREIGN,REFERENCES},
+    morekeywords=[2]{CHAR,VARCHAR,INT,DATE,TIME,FLOAT,DECIMAL,BOOLEAN},
+    sensitive=false
+}
+
+% Lenguaje SQL
+\lstdefinelanguage{sql}{
+    morekeywords={
+        SELECT,FROM,WHERE,INSERT,INTO,VALUES,UPDATE,SET,DELETE,
+        CREATE,ALTER,DROP,TABLE,DATABASE,INDEX,VIEW,
+        JOIN,INNER,LEFT,RIGHT,FULL,OUTER,ON,
+        GROUP,BY,ORDER,ASC,DESC,HAVING,LIMIT,OFFSET,
+        DISTINCT,AS,AND,OR,NOT,IN,IS,NULL,BETWEEN,LIKE,
+        UNION,ALL,EXISTS,
+        PRIMARY,KEY,FOREIGN,REFERENCES,CONSTRAINT,
+        UNIQUE,CHECK,DEFAULT,AUTO_INCREMENT,
+        CASCADE,RESTRICT
+    },
+    morekeywords=[2]{
+        CHAR,VARCHAR,TINYINT,SMALLINT,INT,BIGINT,
+        FLOAT,DOUBLE,DECIMAL,DATE,DATETIME,TIME,
+        TIMESTAMP,YEAR,BOOLEAN,TEXT,TINYTEXT,MEDIUMTEXT,LONGTEXT,
+        BLOB,TINYBLOB,MEDIUMBLOB,LONGBLOB
+    },
+    morekeywords=[3]{
+        COUNT,SUM,AVG,MIN,MAX,COALESCE,CONCAT,
+        UPPER,LOWER,LENGTH,ROUND,NOW,CURDATE,CURTIME
+    },
+    sensitive=false,
+    morecomment=[l]{--},
+    morecomment=[s]{/*}{*/},
+    morestring=[b]'
+}
+
+% Estilo para el modelo relacional
+\lstdefinestyle{modelo}{
+    language=relacional,
+    basicstyle=\ttfamily\small,
+    backgroundcolor=\color{fondo},
+    frame=single,
+    rulecolor=\color{marco},
+    framesep=8pt,
+    numbers=left,
+    numberstyle=\tiny\color{numeros},
+    numbersep=10pt,
+    keywordstyle=\color{palabrasclave}\bfseries,
+    keywordstyle=[2]\color{tipos},
+    breaklines=true,
+    keepspaces=true,
+    showstringspaces=false,
+    tabsize=4
+}
+
+% Estilo para SQL
+\lstdefinestyle{codigoSQL}{
+    language=sql,
+    basicstyle=\ttfamily\small,
+    backgroundcolor=\color{fondo},
+    frame=single,
+    rulecolor=\color{marco},
+    framesep=8pt,
+    numbers=left,
+    numberstyle=\tiny\color{numeros},
+    numbersep=10pt,
+    keywordstyle=\color{palabrasclave}\bfseries,
+    keywordstyle=[2]\color{tipos},
+    keywordstyle=[3]\color{funciones}\bfseries,
+    commentstyle=\color{comentarios}\itshape,
+    stringstyle=\color{tipos},
+    breaklines=true,
+    keepspaces=true,
+    showstringspaces=false,
+    tabsize=4
+}
+
+
+
+
+% Chapter/section formatting
+\usepackage{titlesec}
+\titleformat{\chapter}[block]
+  {\normalfont\bfseries\Large\centering} % formato del título
+  {}{0pt}{\MakeUppercase} % etiqueta vacía: no muestra "CAPÍTULO N:"
+\titlespacing*{\chapter}{0pt}{-0.5em}{1.5em}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+
+% Number figures/tables by chapter
+\usepackage{chngcntr}
+\counterwithin{figure}{chapter}
+\counterwithin{table}{chapter}
+
+% Include LOF/LOT/References in ToC
+\usepackage[nottoc]{tocbibind}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,shapes,calc,fit}
+\usepackage{csquotes}
+% Citation setup (edit style if needed)
+\usepackage[backend=biber,style=ieee,sorting=none,maxnames=6]{biblatex}
+\addbibresource{bib/references.bib}
+
+% Handy macros for consistent names
+\newcommand{\UnivLine}{\textbf{\University}}

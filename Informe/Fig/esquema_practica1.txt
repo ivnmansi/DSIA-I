@@ -1,0 +1,108 @@
+AEROPUERTO(
+  codigo_aeropuerto CHAR(3),
+  nombre VARCHAR(32),
+  pais INT(3),
+  ciudad INT(8),
+
+  PRIMARY KEY(codigo_aeropuerto)
+);
+
+
+TIPO_AVION(
+  nombre_tipo VARCHAR(8),
+  max_asientos INT(3),
+  empresa INT(8),
+
+  PRIMARY KEY(nombre_tipo)
+);
+
+PUEDE_ATERRIZAR(
+  codigo_aeropuerto CHAR(3),
+  nombre_tipo VARCHAR(8),
+  PRIMARY KEY(codigo_aeropuerto, nombre_tipo),
+  FOREIGN KEY(codigo_aeropuerto)
+    REFERENCES AEROPUERTO(codigo_aeropuerto),
+  FOREIGN KEY(nombre_tipo)
+    REFERENCES TIPO_AVION(nombre_tipo)
+)
+
+AVION(
+  id_avion INT(8),
+  num_total_asientos INT(3),
+  nombre_tipo_avion VARCHAR(8),
+
+  PRIMARY KEY(id_avion),
+  FOREIGN KEY(nombre_tipo_avion)
+    REFERENCES TIPO_AVION(nombre_tipo),
+);
+
+INSTANCIA_TRAMO(
+  fecha DATE,
+  numero_asientos_disponibles INT(3),
+  avion_asignado INT(8),
+  vuelo INT(16)
+  numero_tramo INT(3),
+  llega_a CHAR(3),
+  sale_de CHAR(3),
+  hora_llegada TIME,
+  hora_salida TIME,
+
+  PRIMARY KEY(vuelo, numero_tramo, fecha),
+  FOREIGN KEY(avion_asignado)
+  REFERENCES AVION(id_avion),
+  FOREIGN KEY(vuelo, numero_tramo)
+    REFERENCES TRAMO_VUELO(vuelo, numero_tramo),
+  FOREIGN KEY(llega_a)
+    REFERENCES AEROPUERTO(codigo_aeropuerto),
+  FOREIGN KEY(sale_de)
+    REFERENCES AEROPUERTO(codigo_aeropuerto),
+);
+
+ASIENTO(
+  numero_asiento INT(3),
+  nombre_cliente VARCHAR(32),
+  telefono_cliente VARCHAR(8),
+  vuelo INT(16),
+  numero_tramo INT(3),
+  fecha DATE,
+
+  PRIMARY KEY(vuelo, numero_tramo, fecha, numero_asiento),
+  FOREIGN KEY(vuelo, numero_tramo, fecha)
+    REFERENCES INSTANCIA_TRAMO(vuelo, numero_tramo, fecha)
+)
+
+VUELO(
+  linea_aerea INT(8),
+  numero INT(16),
+  dias_semana INT(1),
+
+  PRIMARY KEY(numero),
+);
+
+TARIFA(
+  codigo INT(16),
+  importe INT(8),
+  restricciones INT(3),
+  vuelo INT(16),
+
+  PRIMARY KEY(codigo),
+  FOREIGN KEY(vuelo)
+    REFERENCES VUELO(numero)
+);
+
+TRAMO_VUELO(
+  numero_tramo INT(3),
+  hora_llegada_programada TIME,
+  hora_salida_programada TIME,
+  aeropuerto_salida CHAR(3),
+  vuelo INT(16),
+  PRIMARY KEY(numero_tramo, vuelo),
+  FOREIGN KEY(aeropuerto_llegada)
+    REFERENCES AEROPUERTO(codigo_aeropuerto),
+  FOREIGN KEY(aeropuerto_salida)
+    REFERENCES AEROPUERTO(codigo_aeropuerto)
+  FOREIGN KEY(vuelo)
+    REFERENCES VUELO(numero)
+);
+
+
