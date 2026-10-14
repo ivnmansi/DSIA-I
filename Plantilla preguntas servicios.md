@@ -44,6 +44,8 @@ Necesidad:
 Acreditación tiene 3 niveles en generación de reportes según que tan manual es hacer esto. Actualmetne se está en nivel básico. Avanzado sería que con un botón se haga todo lo que se requiere.
 
 Otro proceso que tiene acreditación es la integración. Si se ve que un item está en un estado cuestionable, se hace un aviso preventivo para mejorar esto. Esto no se hace, pero sería ideal.
+
+También uso en sala es parte de.
 ### Catalogación
 Pendiente ver lo digital
 Se registra el ingreso de libros.
@@ -95,15 +97,60 @@ items que hay: logias, sillas (ingreso de gente), libros, materiales, computador
 
 Cuando se ingresa un item se selecciona el tipo, y según el tipo se despliega el formulario de info.  (parte de catalogación)
 ### Servicios comunitarios
-Actividades
+La inicia la planificación que se guarda mas que nada en cabeza de la jefe de biblioteca. son las actividades que se necesitan en función para cumplir con el rol social e institucional que tiene al biblioteca (apoyo estudiantes y enlace conocimiento univiersitario-comunidad).
 
+Son pocas las actividades que la biblioteca logra levantar, ejemplos de lo que se ha hecho son actividades de invierno para niños. La misma biblioteca son los voluntarios organizan, etc. Otra actividad que se ha hecho son talleres de escritura creativa abierto para estudiantes.
+
+Cualquier persona puede acceder a la biblioteca al final al cabo. 
+
+Biblioteca también es unidad de apoyo para transmitir las investigaciones de los investigadores de la universidad. 
+
+Si la persona no está en la base de datos de horizont, hay un usuario llamado invitado, y se hace lo de prestar silla. Solo tienen acceso a los servicios dentro.
+
+Otro servicio comunitario es ciencia abierta, que tiene objetivo de entregar coonocimiento de forma accesible y abierta. de esto se crean repositorios. Esto toma puntos como acceso abierto a la información, lugares abiertos, datos abiertos, laboratorios abiertos, innovación abierta, código abierto, equipos abiertos, ciencia ciudadana (involucrar a la comunidad en investigaciones).
+
+mandatan por ej participar en ferias, universidad abierta, visitas institucionales.
+
+la biblioteca mas que nada es la que invita a hacer actividades.
+
+si alguien quisiera hacer una actividad en biblioteca, manda un correo a administración, y se le resppnde con un correo de si o no. También se permiten entidades externas. NO hay un formulario fijo.
+
+Las que salen de biblioteca. hay un comité creativo de la bilbioteca que toma las decisiones y evalua si la idea se puede hacer, cuando, como, si topa con otra actividad. se da visto bueno o malo. SI da visto malo igual se puede reconsiderar. Algo importante a considerar es la complejidad de la actividad.
+EL comité creativo tiene representantes del recurso físico, tecnologico, bibliotecologos, procesos técnicos, asistentes, las distintas áreas. Este se forma cada semestre, va rotando. Es por elección arbitraria de la jefa de biblioteca.
+
+Después de hacer la actividad, no hay informe ni retroalimentación de lo que se hizo o alguna encuesta de satisfacción  de como estuvo. la retroalimentación que se recibe es algo informal boca a boca.
 
 ### Inventario
+Primer paso inventariado: seleccionar donde hacer el inventario, no se hace todo de una vez siempre. Según el lugar también hay colecciones en específico. Depende de lo disponible.
 
+La seleccion entonces es según lugar, colección y tipo de item. Se pasa a estado de inventario considerando el estado en que está el item, se hace solo de lo que está en circulación (en estante o disponible).
 
+2do paso es pasar los items a estado de estante -> inventario.
+
+Con el software, se pasa el sensor por el codigo de barras y queda en tránsito. Se hace esto libro por libro. Y se genera la lista de lo que está en colección. Se hace segunda revisión para ver si realmente están. SI algo no está queda como inventario o extraviado hasta que pasan 2 años, ahí se da de baja si no se vuelve a encontrar.
+
+Se hace inventario de todos los recursos bibliográficos físicos.
+
+Es importante ser riguroso con la selección del inventariado.
+
+Es más que nada trabajo físico de buscar los libros y leer los codigos de barra.
+
+Antes del inventario el primer paso es ordenar físicamente rigurosamente las estanterias según clasificación. esto es trabajo físico que se mantiene durante todo el año. es una tarea continua, se hace todos los días en horarios establecidos por las asistentes.
+
+Los libros en la base de datos no guardan su ubicación física.
+
+El inventario se hace periodicamente, idealmente anual. Demora aprox 3 meses.
+
+Cuando se termina de hacer el inventario se hace un listado de libros perdidos, el cual queda para los siguientes inventarios. queda un excel del inventario. 
+
+Los libros que no están en inventario, se ve de hace cuanto tiempo no están, y se borran.  Eliminación de libros perdidos del software.
+
+Se hace un informe, balance final, se da el listado de libros perdidos a las autoridades.
+
+Entre los pasos se supervisa por la bibliotecaria. No hay autorizaciones. 
 
 ### Descarte
-
+Es el seleccionar un libro, y según algun criterio, descartarlo de la colección.
 
 
 ### Colecciones moviles
