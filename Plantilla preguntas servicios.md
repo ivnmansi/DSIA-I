@@ -47,7 +47,6 @@ Otro proceso que tiene acreditación es la integración. Si se ve que un item es
 
 También uso en sala es parte de.
 ### Catalogación
-Pendiente ver lo digital
 Se registra el ingreso de libros.
 
 Criterios cuando se dona un libro: Libro tiene que ser relevante para el alumnado, información actualizada. Se hace una selección de los que realmente sirvan para la comunidad académica. No todos se ingresan al sistema. Se registra como donación. Los libros que no pasan el filtro, quedan en libros libres. Se consulta si el libro es relevante con un experto (correo, a un profe, jefe de carrera, experto discliplinario, etc. Si no contesta, se asume que no es relevante). La consulta se hace únicamente si el libro está en buen estado.
@@ -151,6 +150,58 @@ Entre los pasos se supervisa por la bibliotecaria. No hay autorizaciones.
 
 ### Descarte
 Es el seleccionar un libro, y según algun criterio, descartarlo de la colección.
+Este criterio tiene un reglamento específico.
+
+la idea del proceso de descarte nace de que existe un cambio de paradigma en bibliotecas, no solo acumular libros, sino hacer una gestión eficiente del recurso bibliográfico. para gestionar, es necesario tener este procedimiento de descarte.
+como la biblioteca es pública, descartar requirió oficializar el proceso de descarte.
+
+el descarte parte en primero hacer una propuesta técnica del descarte, por un profesional encargado (bibliotecologas). se hace un informe para proponer que es lo que se debe descartar. debe considerar al menos material obsoleto por calidad, pertinencia, o sea que no haya sido solicitado en 30 años, material deteriorado, que constituyan riesgo biologico, por fuerza mayor, material de soporte que ya no sean leibles (cd, diskets, cassets). material de más de 5 años también puede ser considerado. 
+En el informe se propone la cntidad de copias para descartar, razón y el lugar de destino. 
+
+Este informe se envia al jefe de carrera, departamento del area disciplinar, etc que sea experto.
+El experto da el visto bueno, dice cuales si cuales no.
+Se envia por correo, la propuesta técnica en un excel, y la resolución del procedimiento (protocolo). la propuesta técnica no es pedida por alguna autoridad. el excel tiene el titutlo con el autor, año, numero de prestamos. Este excel se saca de Horizont.
+
+La bibliotecaria lo que hace es sacar el excel de todos los libros de la biblioteca desde horizont, y se hace un filtrado y ordenaje manual del numero de prestamos y fecha de último prestamo. La separación por temática y carreras también es manual.
+Si un libro es transversal, se manda a las varias carreras, y basta con que solo una de ellas diga que si necesita el libro para que no se descarte.
+
+Si no responden el correo, se insiste. Se necesita si o si la respuesta para descartar. EL formato de respuesta no es estándar. Algunos dicen si o no cada uno. otros si todo, otros con observaciones. etc.
+
+Luego se trabaja cada libro, se quita el membrete, etc. En el software horizont queda en estado de baja.
+
+Se gestiona con un lugar de envio, colegio, carcel, reinsercion social, etc, para que reciban los libros descartados.
+
+Este proceso de descarte es anual.
+
+Se elabora un acta de descarte con un excel con todos los libros que se van de baja. Este queda interno en la biblioteca en un drive.
+Una vez ya se haga el acta, ya se elimina el libro del software Horizont.
+
+el proceso de selección dura bastante. Se tiene como meta anualmente descartar 1000 copias. 
+
+Descarte no considera las cosas digitales. 
+
+la idea es darle prioridad a la bibliografía mas pertinente considerando el espacio limitado.
+
+La parte mas tediosa es la preparación de los libros, que es el trabajo físico.
 
 
 ### Colecciones moviles
+Es el proceso de cuando los departamentos quedan con libros en sus departamentos como prestados. en horizont quedan en estado "prestado departamento".  Esto tiene un reglamento.
+
+colecciones moviles hay en derecho, auditoria, tecnico en enfermeria, gaia antartica.
+El prestamo se hace por 1 año, y se renueva el documento.
+La idea es que quede al menos una copia en la biblioteca.
+
+se pueden ser solicitados en el lugar en el que se hizo el prestamo.
+
+cuando hay que renovar esto, hay que ir a insistir para renovar el documento (correo, ir, etc). 
+
+si hay daño, debe reponerlo monetariamente.
+
+se guarda para la bilbioteca la lista de libros prestados y su lugar por si fiscaliza contraloria.
+
+director de departamento si quiere una coleccion movil, manda correo a bilbioteca (sin formato). biblioteca rellena formulario oficial del prestamo con la info. se puede rechazar la solicitud. 
+tambien la solicitud puede llegar desde el descarte. 
+En horizont el estado de prestado departamento se coloca antes de entregarlo.
+
+2
