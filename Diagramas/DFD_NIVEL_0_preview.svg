@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-1650 -1000 3300 2000" width="1650" height="1000" style="background:#1e1e1e; font-family:sans-serif;">
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 1 L 10 5 L 0 9 z" fill="#b197fc" />
+  </marker>
+</defs>
+<!-- Central System -->
+<rect x="-475" y="-260" width="950" height="520" rx="20" fill="#ffec99" stroke="#f08c00" stroke-width="4"/>
+<text x="0" y="0" text-anchor="middle" dominant-baseline="middle" font-size="28" font-weight="bold" fill="#000">Sistema de Gestión de Bibliotecas</text>
+<!-- Entities -->
+<rect x="-380" y="-820" width="280" height="110" rx="15" fill="#eebefa" stroke="#9c36b5" stroke-width="3"/>
+<text x="-240" y="-777" text-anchor="middle" dominant-baseline="middle" font-size="16" font-weight="bold" fill="#000">Autoridades universitarias</text>
+<text x="-240" y="-751" text-anchor="middle" dominant-baseline="middle" font-size="16" font-weight="bold" fill="#000">/ contraloria</text>
+<rect x="40" y="-820" width="340" height="110" rx="15" fill="#eebefa" stroke="#9c36b5" stroke-width="3"/>
+<text x="210" y="-777" text-anchor="middle" dominant-baseline="middle" font-size="16" font-weight="bold" fill="#000">Jefe de carrera</text>
+<text x="210" y="-751" text-anchor="middle" dominant-baseline="middle" font-size="16" font-weight="bold" fill="#000">/ dirección curricular</text>
+<rect x="-480" y="710" width="260" height="110" rx="15" fill="#eebefa" stroke="#9c36b5" stroke-width="3"/>
+<text x="-350" y="753" text-anchor="middle" dominant-baseline="middle" font-size="16" font-weight="bold" fill="#000">Comunidad externa</text>
+<text x="-350" y="779" text-anchor="middle" dominant-baseline="middle" font-size="16" font-weight="bold" fill="#000">/ invitados</text>
+<rect x="-200" y="710" width="620" height="110" rx="15" fill="#eebefa" stroke="#9c36b5" stroke-width="3"/>
+<text x="110" y="765" text-anchor="middle" dominant-baseline="middle" font-size="18" font-weight="bold" fill="#000">Comunidad universitaria</text>
+<rect x="-1485" y="-220" width="270" height="120" rx="15" fill="#eebefa" stroke="#9c36b5" stroke-width="3"/>
+<text x="-1350" y="-160" text-anchor="middle" dominant-baseline="middle" font-size="18" font-weight="bold" fill="#000">Instituciones receptoras de descartes</text>
+<rect x="-1485" y="-60" width="270" height="120" rx="15" fill="#eebefa" stroke="#9c36b5" stroke-width="3"/>
+<text x="-1350" y="0" text-anchor="middle" dominant-baseline="middle" font-size="18" font-weight="bold" fill="#000">SAYD</text>
+<rect x="-1485" y="100" width="270" height="120" rx="15" fill="#eebefa" stroke="#9c36b5" stroke-width="3"/>
+<text x="-1350" y="160" text-anchor="middle" dominant-baseline="middle" font-size="18" font-weight="bold" fill="#000">Plataformas digitales externas</text>
+<rect x="1215" y="-230" width="270" height="300" rx="15" fill="#eebefa" stroke="#9c36b5" stroke-width="3"/>
+<text x="1350" y="-92" text-anchor="middle" dominant-baseline="middle" font-size="16" font-weight="bold" fill="#000">Experto disciplinario</text>
+<text x="1350" y="-66" text-anchor="middle" dominant-baseline="middle" font-size="16" font-weight="bold" fill="#000">/ docente validador</text>
+<rect x="1215" y="100" width="270" height="120" rx="15" fill="#eebefa" stroke="#9c36b5" stroke-width="3"/>
+<text x="1350" y="160" text-anchor="middle" dominant-baseline="middle" font-size="18" font-weight="bold" fill="#000">Director de departamento</text>
+<!-- Flows and Arrows -->
+<line x1="-300" y1="-710" x2="-300" y2="-487.5" stroke="#b197fc" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="-300" y1="-412.5" x2="-300" y2="-260" stroke="#b197fc" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="-395" y="-487.5" width="190" height="75" rx="10" fill="#d0bfff" stroke="none"/>
+<text x="-300" y="-450" text-anchor="middle" dominant-baseline="middle" font-size="13" font-weight="600" fill="#3b1f7d">Solicitud balance anual</text>
+<line x1="-180" y1="-260" x2="-180" y2="-552.5" stroke="#b197fc" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="-180" y1="-627.5" x2="-180" y2="-710" stroke="#b197fc" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="-275" y="-627.5" width="190" height="75" rx="10" fill="#d0bfff" stroke="none"/>
+<text x="-180" y="-590" text-anchor="middle" dominant-baseline="middle" font-size="13" font-weight="600" fill="#3b1f7d">Balance anual inventario</text>
+<line x1="100" y1="-710" x2="100" y2="-487.5" stroke="#b197fc" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="100" y1="-412.5" x2="100" y2="-260" stroke="#b197fc" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="5" y="-487.5" width="190" height="75" rx="10" fill="#d0bfff" stroke="none"/>
+<text x="100" y="-450" text-anchor="middle" dominant-baseline="middle" font-size="13" font-weight="600" fill="#3b1f7d">Solicitud acreditación</text>
+<line x1="210" y1="-260" x2="210" y2="-552.5" stroke="#b197fc" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="210" y1="-627.5" x2="210" y2="-710" stroke="#b197fc" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="115" y="-627.5" width="190" height="75" rx="10" fill="#d0bfff" stroke="none"/>
+<text x="210" y="-590" text-anchor="middle" dominant-baseline="middle" font-size="13" font-weight="600" fill="#3b1f7d">Reporte acreditación</text>
+<line x1="320" y1="-710" x2="320" y2="-487.5" stroke="#b197fc" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="320" y1="-412.5" x2="320" y2="-260" stroke="#b197fc" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="225" y="-487.5" width="190" height="75" rx="10" fill="#d0bfff" stroke="none"/>
+<text x="320" y="-450" text-anchor="middle" dominant-baseline="middle" font-size="13" font-weight="600" fill="#3b1f7d">Requerimientos de compra</text>
+<line x1="-390" y1="710" x2="-390" y2="487.5" stroke="#b197fc" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="-390" y1="412.5" x2="-390" y2="260" stroke="#b197fc" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="-485" y="412.5" width="190" height="75" rx="10" fill="#d0bfff" stroke="none"/>
+<text x="-390" y="450" text-anchor="middle" dominant-baseline="middle" font-size="13" font-weight="600" fill="#3b1f7d">Solicitud actividad</text>
+<line x1="-280" y1="260" x2="-280" y2="552.5" stroke="#b197fc" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="-280" y1="627.5" x2="-280" y2="710" stroke="#b197fc" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="-375" y="552.5" width="190" height="75" rx="10" fill="#d0bfff" stroke="none"/>
+<text x="-280" y="590" text-anchor="middle" dominant-baseline="middle" font-size="13" font-weight="600" fill="#3b1f7d">Resolución actividad</text>
+<line x1="-170" y1="710" x2="-170" y2="487.5" stroke="#b197fc" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="-170" y1="412.5" x2="-170" y2="260" stroke="#b197fc" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="-265" y="412.5" width="190" height="75" rx="10" fill="#d0bfff" stroke="none"/>
+<text x="-170" y="450" text-anchor="middle" dominant-baseline="middle" font-size="13" font-weight="600" fill="#3b1f7d">Solicitud préstamo</text>
+<line x1="-60" y1="260" x2="-60" y2="552.5" stroke="#b197fc" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="-60" y1="627.5" x2="-60" y2="710" stroke="#b197fc" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="-155" y="552.5" width="190" height="75" rx="10" fill="#d0bfff" stroke="none"/>
+<text x="-60" y="590" text-anchor="middle" dominant-baseline="middle" font-size="13" font-weight="600" fill="#3b1f7d">Ejemplar préstamo</text>
+<line x1="50" y1="710" x2="50" y2="487.5" stroke="#b197fc" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="50" y1="412.5" x2="50" y2="260" stroke="#b197fc" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="-45" y="412.5" width="190" height="75" rx="10" fill="#d0bfff" stroke="none"/>
+<text x="50" y="450" text-anchor="middle" dominant-baseline="middle" font-size="13" font-weight="600" fill="#3b1f7d">Devolución</text>
+<line x1="160" y1="260" x2="160" y2="552.5" stroke="#b197fc" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="160" y1="627.5" x2="160" y2="710" stroke="#b197fc" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="65" y="552.5" width="190" height="75" rx="10" fill="#d0bfff" stroke="none"/>
+<text x="160" y="590" text-anchor="middle" dominant-baseline="middle" font-size="13" font-weight="600" fill="#3b1f7d">Multa préstamo</text>
+<line x1="270" y1="710" x2="270" y2="487.5" stroke="#b197fc" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="270" y1="412.5" x2="270" y2="260" stroke="#b197fc" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="175" y="412.5" width="190" height="75" rx="10" fill="#d0bfff" stroke="none"/>
+<text x="270" y="450" text-anchor="middle" dominant-baseline="middle" font-size="13" font-weight="600" fill="#3b1f7d">Donación</text>
+<line x1="380" y1="260" x2="380" y2="552.5" stroke="#b197fc" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="380" y1="627.5" x2="380" y2="710" stroke="#b197fc" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="285" y="552.5" width="190" height="75" rx="10" fill="#d0bfff" stroke="none"/>
+<text x="380" y="590" text-anchor="middle" dominant-baseline="middle" font-size="13" font-weight="600" fill="#3b1f7d">Agradecimiento donación</text>
+<line x1="-475" y1="-190" x2="-705" y2="-190" stroke="#b197fc" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="-895" y1="-190" x2="-1215" y2="-190" stroke="#b197fc" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="-895" y="-227.5" width="190" height="75" rx="10" fill="#d0bfff" stroke="none"/>
+<text x="-800" y="-190" text-anchor="middle" dominant-baseline="middle" font-size="13" font-weight="600" fill="#3b1f7d">Ejemplares de baja</text>
+<line x1="-1215" y1="-110" x2="-1125" y2="-110" stroke="#b197fc" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="-935" y1="-110" x2="-475" y2="-110" stroke="#b197fc" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="-1125" y="-147.5" width="190" height="75" rx="10" fill="#d0bfff" stroke="none"/>
+<text x="-1030" y="-110" text-anchor="middle" dominant-baseline="middle" font-size="13" font-weight="600" fill="#3b1f7d">Acuso recibo informal</text>
+<line x1="-475" y1="-30" x2="-705" y2="-30" stroke="#b197fc" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="-895" y1="-30" x2="-1215" y2="-30" stroke="#b197fc" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="-895" y="-67.5" width="190" height="75" rx="10" fill="#d0bfff" stroke="none"/>
+<text x="-800" y="-30" text-anchor="middle" dominant-baseline="middle" font-size="13" font-weight="600" fill="#3b1f7d">Petición padrón</text>
+<line x1="-1215" y1="50" x2="-1125" y2="50" stroke="#b197fc" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="-935" y1="50" x2="-475" y2="50" stroke="#b197fc" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="-1125" y="12.5" width="190" height="75" rx="10" fill="#d0bfff" stroke="none"/>
+<text x="-1030" y="50" text-anchor="middle" dominant-baseline="middle" font-size="13" font-weight="600" fill="#3b1f7d">Padrón de RUTS, carreras y matrículas</text>
+<line x1="-475" y1="130" x2="-705" y2="130" stroke="#b197fc" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="-895" y1="130" x2="-1215" y2="130" stroke="#b197fc" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="-895" y="92.5" width="190" height="75" rx="10" fill="#d0bfff" stroke="none"/>
+<text x="-800" y="130" text-anchor="middle" dominant-baseline="middle" font-size="13" font-weight="600" fill="#3b1f7d">Orden compra recursos digitales</text>
+<line x1="-1215" y1="210" x2="-1125" y2="210" stroke="#b197fc" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="-935" y1="210" x2="-475" y2="210" stroke="#b197fc" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="-1125" y="172.5" width="190" height="75" rx="10" fill="#d0bfff" stroke="none"/>
+<text x="-1030" y="210" text-anchor="middle" dominant-baseline="middle" font-size="13" font-weight="600" fill="#3b1f7d">Recursos digitales</text>
+<line x1="475" y1="-190" x2="705" y2="-190" stroke="#b197fc" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="895" y1="-190" x2="1215" y2="-190" stroke="#b197fc" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="705" y="-227.5" width="190" height="75" rx="10" fill="#d0bfff" stroke="none"/>
+<text x="800" y="-190" text-anchor="middle" dominant-baseline="middle" font-size="13" font-weight="600" fill="#3b1f7d">Consulta pertinencia donación</text>
+<line x1="1215" y1="-110" x2="1125" y2="-110" stroke="#b197fc" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="935" y1="-110" x2="475" y2="-110" stroke="#b197fc" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="935" y="-147.5" width="190" height="75" rx="10" fill="#d0bfff" stroke="none"/>
+<text x="1030" y="-110" text-anchor="middle" dominant-baseline="middle" font-size="13" font-weight="600" fill="#3b1f7d">Visto bueno donación</text>
+<line x1="475" y1="-30" x2="705" y2="-30" stroke="#b197fc" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="895" y1="-30" x2="1215" y2="-30" stroke="#b197fc" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="705" y="-67.5" width="190" height="75" rx="10" fill="#d0bfff" stroke="none"/>
+<text x="800" y="-30" text-anchor="middle" dominant-baseline="middle" font-size="13" font-weight="600" fill="#3b1f7d">Propuesta descarte</text>
+<line x1="1215" y1="50" x2="1125" y2="50" stroke="#b197fc" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="935" y1="50" x2="475" y2="50" stroke="#b197fc" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="935" y="12.5" width="190" height="75" rx="10" fill="#d0bfff" stroke="none"/>
+<text x="1030" y="50" text-anchor="middle" dominant-baseline="middle" font-size="13" font-weight="600" fill="#3b1f7d">Validación descarte</text>
+<line x1="1215" y1="130" x2="895" y2="130" stroke="#b197fc" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="705" y1="130" x2="475" y2="130" stroke="#b197fc" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="705" y="92.5" width="190" height="75" rx="10" fill="#d0bfff" stroke="none"/>
+<text x="800" y="130" text-anchor="middle" dominant-baseline="middle" font-size="13" font-weight="600" fill="#3b1f7d">Solicitud / renovación colección móvil</text>
+<line x1="475" y1="210" x2="935" y2="210" stroke="#b197fc" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="1125" y1="210" x2="1215" y2="210" stroke="#b197fc" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="935" y="172.5" width="190" height="75" rx="10" fill="#d0bfff" stroke="none"/>
+<text x="1030" y="210" text-anchor="middle" dominant-baseline="middle" font-size="13" font-weight="600" fill="#3b1f7d">Ejemplares en colección móvil</text>
+</svg>

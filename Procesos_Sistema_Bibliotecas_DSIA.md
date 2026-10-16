@@ -1,62 +1,4 @@
-# Estructuración Integral de Procesos del Sistema de Bibliotecas para Modelado DSIA
-**Documento de Especificación, Levantamiento y Análisis Funcional**  
-**Asignatura:** Diseño de Sistemas de Información Administrativos (DSIA I)  
-**Institución:** Universidad de Magallanes (UMAG) — Sistema de Bibliotecas  
-**Origen:** Integración y sistematización exhaustiva a partir de `Plantilla preguntas servicios.md` y entrevistas de campo.
-
----
-
-## 1. Visión General del Sistema y Diagrama de Contexto (DFD Nivel 0)
-
-El **Sistema de Gestión de Bibliotecas (SGB - UMAG)** administra, preserva y provee acceso a los recursos bibliográficos físicos y digitales, equipamiento tecnológico y espacios de estudio de la Universidad de Magallanes. Coordina el flujo de información operativa y estratégica entre la comunidad universitaria (estudiantes, docentes, funcionarios), las jefaturas y direcciones de carrera, directores de departamentos académicos, unidades de acreditación, comités disciplinares, autoridades superiores, organismos de control público (Contraloría) e instituciones comunitarias receptoras de donaciones y material de descarte.
-
-```mermaid
-flowchart TD
-    subgraph Entidades_Externas["Entidades Externas (Frontera del Sistema)"]
-        JC["EE-01: Jefe de Carrera / Dirección Curricular"]
-        CU["EE-02: Comunidad Universitaria (Alumnos / Docentes / Funcionarios)"]
-        EX["EE-03: Comunidad Externa / Invitados"]
-        DD["EE-04: Director de Departamento Académico"]
-        ED["EE-05: Experto Disciplinario / Docente Validador"]
-        AU["EE-06: Autoridades Universitarias y Contraloría"]
-        IR["EE-07: Instituciones Receptoras de Descarte (Escuelas/Cárceles)"]
-        SAYD["EE-08: Sistema Académico SAYD (Institucional)"]
-        PROV["EE-09: Proveedores / Plataformas Digitales Externas"]
-    end
-
-    SGB["0.0<br/><b>Sistema de Gestión de Bibliotecas</b><br/>(Biblioteca Central UMAG)"]
-
-    %% Interacciones
-    JC -->|"F-IN-01: Solicitud Acreditación / Requerimientos Compra"| SGB
-    SGB -->|"F-OUT-01: Reporte Acreditación 5 Años / Alerta Bibliografía"| JC
-
-    CU -->|"F-IN-02: Solicitud Préstamo / RUT / Devolución / Donación"| SGB
-    SGB -->|"F-OUT-02: Ejemplar / Ficha Vencimiento / Multa / Agradecimiento"| CU
-
-    EX -->|"F-IN-03: Solicitud Actividad Extensión / Registro Sala"| SGB
-    SGB -->|"F-OUT-03: Resolución Actividad / Acceso a Sala (Invitado)"| EX
-
-    DD -->|"F-IN-04: Solicitud / Renovación Colección Móvil"| SGB
-    SGB -->|"F-OUT-04: Formulario Oficial / Ejemplares en Préstamo Departamental"| DD
-
-    SGB -->|"F-IN-05: Consulta Pertinencia (Donación) / Propuesta Descarte"| ED
-    ED -->|"F-OUT-05: Visto Bueno Donación / Validación Transversal Descarte"| SGB
-
-    SGB -->|"F-OUT-06: Balance Anual Inventario / Actas de Descarte Oficiales"| AU
-    AU -.->|"F-IN-06: Fiscalización y Auditoría Patrimonial"| SGB
-
-    SGB -->|"F-OUT-07: Ejemplares de Baja Desmembrados (Donación Externa)"| IR
-
-    SAYD -->|"F-IN-08: Padrón de Matrículas / RUTs / Carreras"| SGB
-
-    PROV -->|"F-IN-09: Recursos Digitales / Enlaces / Bases de Datos"| SGB
-```
-
----
-
-## 2. Catálogo de Entidades Externas y Almacenes de Datos
-
-### 2.1. Entidades Externas (Actores de Frontera)
+# Entidades Externas 
 
 | Código | Entidad Externa | Rol y Responsabilidad Administrativa en el Sistema |
 | :--- | :--- | :--- |
@@ -70,9 +12,7 @@ flowchart TD
 | **EE-08** | **Sistema SAYD (Central UMAG)** | Sistema de administración académica externa que provee la nómina de usuarios habilitados, carreras y estado de matrícula. |
 | **EE-09** | **Proveedores y Plataformas Digitales** | Editoriales comerciales y plataformas externas de libros electrónicos que suministran licencias y enlaces URL a recursos digitales. |
 
----
-
-### 2.2. Almacenes de Datos (Data Stores para DFDs)
+# Almacenes de Datos
 
 | Código | Almacén de Datos | Soporte Tecnológico | Datos Almacenados | Responsable / Frecuencia |
 | :--- | :--- | :--- | :--- | :--- |
