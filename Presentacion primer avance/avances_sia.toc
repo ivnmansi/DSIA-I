@@ -1,0 +1,7 @@
+\babel@toc {spanish}{}\relax 
+\beamer@sectionintoc {1}{Descripción de la empresa}{3}{0}{1}
+\beamer@sectionintoc {2}{Levantamiento de información}{4}{0}{2}
+\beamer@sectionintoc {3}{Elementos identificados}{5}{0}{3}
+\beamer@sectionintoc {4}{Diagramas de flujo de datos}{8}{0}{4}
+\beamer@sectionintoc {5}{Hallazgos y próximos pasos}{11}{0}{5}
+\beamer@sectionintoc {6}{Propuesta de solución}{12}{0}{6}

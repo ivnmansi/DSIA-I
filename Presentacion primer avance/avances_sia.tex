@@ -1,0 +1,266 @@
+% =========================================================
+%  Presentación de avances — Proyecto SIA (Biblioteca)
+%  Compilar con: pdflatex avances_sia.tex  (dos veces)
+%  Para los diagramas: exportar desde Bizagi / la herramienta
+%  del DFD como PNG o PDF y dejarlos en la carpeta figuras/
+%  con los nombres indicados. Si no existen, se muestra un
+%  recuadro de reemplazo.
+% =========================================================
+\documentclass[aspectratio=169,10pt]{beamer}
+
+\usepackage[spanish,es-noshorthands]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{tikz}
+
+\usetheme{default}
+\usecolortheme{default}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[frame number]
+
+\definecolor{azul}{RGB}{0,61,121}
+\definecolor{naranjo}{RGB}{234,114,0}
+\definecolor{gris}{RGB}{110,110,110}
+\setbeamercolor{frametitle}{fg=azul}
+\setbeamercolor{title}{fg=azul}
+\setbeamercolor{structure}{fg=azul}
+\setbeamercolor{block title}{bg=azul,fg=white}
+\setbeamercolor{block body}{bg=azul!6}
+\setbeamerfont{frametitle}{series=\bfseries}
+
+% Figura o recuadro de reemplazo si el archivo aún no existe
+\newcommand{\figura}[3]{%
+  \IfFileExists{#1}{%
+    \includegraphics[width=#2,height=#3,keepaspectratio]{#1}%
+  }{%
+    \begin{tikzpicture}
+      \draw[dashed,gris,thick,rounded corners] (0,0) rectangle (#2,#3);
+      \node[gris,align=center] at (0.5*#2,0.5*#3)
+        {\small Insertar diagrama\\\footnotesize\texttt{\detokenize{#1}}};
+    \end{tikzpicture}%
+  }%
+}
+
+\title{Diagnóstico de Sistemas de Información}
+\subtitle{Avance del proyecto: Biblioteca}
+\author{\small Integrantes: Iván Mansilla, Ayrton Morrison}
+\institute{Diseño de Sistemas de Información}
+\date{Octubre 2026}
+
+\begin{document}
+
+% ---------------------------------------------------------
+\begin{frame}
+  \titlepage
+\end{frame}
+
+% ---------------------------------------------------------
+\begin{frame}{Contenido}
+  \tableofcontents
+\end{frame}
+
+% =========================================================
+\section{Descripción de la empresa}
+% =========================================================
+\begin{frame}{Descripción de la organización}
+  \begin{columns}[T]
+    \begin{column}{0.55\textwidth}
+      \textbf{Biblioteca universitaria}\\
+      \small Unidad de Gestión de Recursos Académicos
+
+      \vspace{0.6em}
+      \begin{itemize}\small
+        \item Gestiona el recurso bibliográfico físico y digital de la universidad.
+        \item Presta libros, espacios (logias, puestos de estudio) y equipos
+              (notebooks, bicicletas, audífonos).
+        \item Apoya a las carreras en acreditación y en la compra de bibliografía.
+        \item Cumple un rol social: actividades abiertas a la comunidad.
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.42\textwidth}
+      \begin{block}{Sistema principal}
+        \small
+        \textbf{Horizont}: catálogo MARC21 (Dewey/Cutter), ítems, usuarios,
+        préstamos, multas y estados del ítem.
+      \end{block}
+      \vspace{0.3em}
+      \begin{block}{Apoyo informal}
+        \small Planillas Excel y Drive para registro de ingreso, inventario,
+        actas y libros digitalizados.
+      \end{block}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+% =========================================================
+\section{Levantamiento de información}
+% =========================================================
+\begin{frame}{Levantamiento de información}
+  \begin{columns}[T]
+    \begin{column}{0.32\textwidth}
+      \begin{block}{1. Entrevista inicial}
+        \small Plantilla de preguntas por servicio con el personal de la biblioteca.
+      \end{block}
+    \end{column}
+    \begin{column}{0.32\textwidth}
+      \begin{block}{2. Seguimiento}
+        \small Preguntas de aclaración (16-10-2026): compras, carga de usuarios,
+        multas, inventario y colecciones móviles.
+      \end{block}
+    \end{column}
+    \begin{column}{0.32\textwidth}
+      \begin{block}{3. Consolidación}
+        \small Documento de levantamiento complementado, con correcciones y
+        decisiones del equipo.
+      \end{block}
+    \end{column}
+  \end{columns}
+
+  \vspace{1em}
+  \textbf{Resultado:} base común para construir los DFD y los BPMN, con
+  registro explícito de supuestos y pendientes.
+\end{frame}
+
+% =========================================================
+\section{Elementos identificados}
+% =========================================================
+\begin{frame}{Procesos identificados}
+  \small
+  \begin{tabularx}{\textwidth}{@{}l X@{}}
+    \toprule
+    \textbf{Proceso} & \textbf{Propósito} \\
+    \midrule
+    Acreditación          & Reportes estadísticos de uso para las carreras \\
+    Catalogación          & Ingreso por donación o compra, catalogación y procesamiento técnico \\
+    Circulación           & Préstamos, devoluciones, ingreso a sala, material digital y multas \\
+    Servicios comunitarios& Actividades propias, de terceros y mandatos institucionales \\
+    Inventario            & Verificar existencia física y depurar perdidos \\
+    Descarte              & Retirar material según reglamento (meta: 1.000 copias/año) \\
+    Colecciones móviles   & Préstamo anual de libros a departamentos \\
+    Actualización usuarios & Carga masiva de usuarios y actualización de datos de usuarios \\
+    \bottomrule
+  \end{tabularx}
+\end{frame}
+
+\begin{frame}{Entidades externas}
+  \begin{columns}[T]
+    \begin{column}{0.5\textwidth}
+      \begin{itemize}\small
+        \item \textbf{Usuario} (estudiante, académico, funcionario)
+        \item \textbf{Comunidad externa / Invitado}
+        \item \textbf{Donante}
+        \item \textbf{Jefe de carrera / Experto disciplinar}
+        \item \textbf{Departamento académico}
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \begin{itemize}\small
+        \item \textbf{Proveedor}
+        \item \textbf{Institución receptora} (descarte)
+        \item \textbf{Autoridades universitarias}
+        \item \textbf{Contraloría}
+        \item \textbf{DSI} (carga masiva de usuarios)
+      \end{itemize}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Almacenes de datos}
+  \small
+  \begin{tabularx}{\textwidth}{@{}l l X@{}}
+    \toprule
+    \textbf{ID} & \textbf{Almacén} & \textbf{Contenido} \\
+    \midrule
+    A1 & Horizont                       & Catálogo, ítems, usuarios, préstamos, multas, estados \\
+    A2 & Excel de registro de ingreso   & Registro manual de cada libro ingresado \\
+    A3 & Drive de libros digitalizados  & Copias digitales (sin estadísticas de uso) \\
+    A4 & Excel de inventario / perdidos & Resultado de cada inventario y perdidos acumulados \\
+    A5 & Drive de actas de descarte     & Actas con los libros dados de baja \\
+    A6 & Listado de colecciones móviles & Libros prestados a departamentos y su ubicación \\
+    \bottomrule
+  \end{tabularx}
+
+  
+\end{frame}
+
+% =========================================================
+\section{Diagramas de flujo de datos}
+% =========================================================
+\begin{frame}{DFD nivel 0 — Diagrama de contexto}
+  \begin{columns}[c]
+    \begin{column}{0.64\textwidth}
+      \centering
+      \figura{../Diagramas/DFD NIVEL 0.pdf}{8.5cm}{5.5cm}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{DFD nivel 1}
+  \begin{columns}[c]
+    \begin{column}{0.64\textwidth}
+      \centering
+      \figura{../Diagramas/DFD NIVEL 1.pdf}{8.5cm}{5.5cm}
+    \end{column}
+
+  \end{columns}
+\end{frame}
+
+\begin{frame}{BPMN de Circulación}
+  \centering
+  \figura{../Diagramas/CIRCULACION.pdf}{13cm}{6.5cm}
+\end{frame}
+
+
+% =========================================================
+\section{Hallazgos y próximos pasos}
+% =========================================================
+\begin{frame}{Hallazgos preliminares}
+  \begin{itemize}
+    \item \textbf{Reportes manuales:} acreditación y descarte dependen de filtrar
+          Excel exportados de Horizont ``al ojo''.
+    \item \textbf{Doble registro:} el Excel de ingreso y Horizont no están relacionados.
+    \item \textbf{Sin trazabilidad digital:} el Drive no entrega estadísticas de uso.
+    \item \textbf{Comunicación informal:} solicitudes y respuestas por correo, sin formato.
+    \item \textbf{Ubicación física:} Horizont no la guarda; errores en estantería.
+    \item \textbf{Ingreso a sala lento:} se registra como préstamo y devolución inmediata.
+  \end{itemize}
+\end{frame}
+
+% =========================================================
+\section{Propuesta de solución}
+% =========================================================
+\begin{frame}{Propuesta: NAS + BookOrbit}
+  \begin{columns}[T]
+    \begin{column}{0.52\textwidth}
+      \begin{block}{Qué se propone}
+        \small
+        Reemplazar el almacén digital en Google Drive por una infraestructura local compuesta por un \textbf{NAS} y la plataforma \textbf{BookOrbit}.
+      \end{block}
+      \vspace{0.4em}
+      \begin{itemize}\small
+        \item Centraliza y respalda localmente la colección digital.
+        \item Publica los documentos con acceso controlado mediante \textbf{SSO / OIDC} para cuentas institucionales.
+        \item Vincula el catálogo \textbf{Horizont} con enlaces directos al lector digital.
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.44\textwidth}
+      \begin{block}{Beneficios clave}
+        \small
+        \begin{itemize}
+          \item Estadísticas de uso para acreditación.
+          \item Mejor experiencia de lectura para estudiantes y docentes.
+          \item Mayor control sobre seguridad, acceso y soberanía tecnológica.
+        \end{itemize}
+      \end{block}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+
+% ---------------------------------------------------------
+
+\end{document}
